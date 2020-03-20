@@ -1,0 +1,36 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d28abc549302178af1b58c0f351769c8ab8652cfb839799674e864ce5a597432
+
+name:           zebra-puzzle
+version:        1.1.0.5
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      ZebraPuzzle
+  other-modules:
+      Paths_zebra_puzzle
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , logict
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_zebra_puzzle
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , hspec
+    , zebra-puzzle
+  default-language: Haskell2010

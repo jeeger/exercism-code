@@ -15,7 +15,7 @@ ebin/*.beam
 rel/example_project
 .concrete/DEV_MODE
 .rebar
-build_/
+_build/
 
 ### Haskell ###
 dist
